@@ -11,6 +11,10 @@ function imprimirMayor(numero1, numero2) {
     // En esta función debe determinar cual de los dos
     // números ingresados por parámetro es mayor
     // y luego imprimir dicho valor en consola
+
+    let mayor = Math.max(numero1, numero2);
+
+    return console.log('El n° mayor ingresado es:', mayor);
 }
 
 imprimirMayor(2, 10);

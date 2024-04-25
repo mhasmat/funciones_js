@@ -1,3 +1,4 @@
+"use strict";
 /**
  * @fileoverview Ejercitación de Funciones
  * @author       Inove coding School <alumnos@inove.com.ar>
@@ -13,3 +14,20 @@
  *    Según la cantidad especificada utilice condicionales para solicitar la cantidad de nombres
  *    correctos.
 */
+
+let cantidadInvitados = parseInt(prompt('Indique cantidad de invitados:'));
+
+function generarInvitados(cantidad) {
+    let invitados = [];
+
+    for(let i=0; i<cantidad; i++) {
+        let invitado = prompt(`Ingrese el nombre del invitado n°${i+1}:`);
+        invitados.push(invitado);
+    }
+    console.log(invitados);    
+
+    return invitados;
+}
+
+let lista = generarInvitados(cantidadInvitados);
+console.log(`Mis invitados: ${lista}`)
